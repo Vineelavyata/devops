@@ -7,6 +7,7 @@ pipeline {
 		stage('Build') {
 			steps {
 				echo 'hello world'
+				sh 'mvn -v'
 				}
 			}
 		stage('QA'){
