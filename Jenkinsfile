@@ -16,5 +16,11 @@ pipeline {
 				sh 'java -version'
 				}
 			}
+		stage('Build') {
+			steps {
+				git branch: 'master'
+				url: 'https://github.com/trayii/greenhousepro.git'
+				}
+			}
 		}
 	}
